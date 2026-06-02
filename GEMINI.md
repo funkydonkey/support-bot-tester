@@ -23,8 +23,11 @@ Never invent results — only record what the bot actually answered in the brows
 Follow these phases in order. Use the shell tool for the helper scripts and the
 Playwright MCP `browser_*` tools for everything in the browser.
 
+> **Python command:** use `python3` on macOS/Linux. On Windows use `python` (or `py`)
+> — if `python3` fails with "not found", retry the same command with `python`.
+
 ### Phase 0 — Load scenarios
-1. Run: `python3 scripts/scenarios_to_json.py`
+1. Run: `python3 scripts/scenarios_to_json.py`  (Windows: `python scripts\scenarios_to_json.py`)
    This reads the Excel sheet and writes `scenarios/scenarios.json`. Read that file.
 2. Read `config.json` for the `target_url`.
 3. If there are zero scenarios, stop and tell the user to fill in
@@ -91,7 +94,7 @@ For every scenario in order:
      ]
    }
    ```
-2. Run: `python3 scripts/report.py`
+2. Run: `python3 scripts/report.py`  (Windows: `python scripts\report.py`)
    This converts `reports/results.json` into a timestamped Excel report under
    `reports/report-<timestamp>.xlsx` and prints a PASS/FAIL/BLOCKED summary.
 3. Give the user a short summary in chat: totals, and a bullet list of every FAIL /

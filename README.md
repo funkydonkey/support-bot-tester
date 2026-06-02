@@ -49,11 +49,26 @@ support-bot-tester/
 
 ## Установка (один раз)
 
+Скрипт поставит `openpyxl`, `@playwright/mcp`, браузер Chrome и создаст шаблон Excel.
+
+### Windows (PowerShell)
+```powershell
+git clone <URL-этого-репозитория>
+cd support-bot-tester
+
+powershell -ExecutionPolicy Bypass -File scripts\setup.ps1
+```
+Или просто **дважды кликните** `scripts\setup.cmd` (он сам обходит блокировку запуска скриптов).
+
+> На Windows команда Python обычно `python` или `py` (не `python3`). PowerShell-скрипт
+> определяет это автоматически. Если будете звать Python-скрипты вручную — пишите
+> `python scripts\scenarios_to_json.py`.
+
+### macOS / Linux (bash)
 ```bash
 git clone <URL-этого-репозитория>
 cd support-bot-tester
 
-# поставит openpyxl, @playwright/mcp, браузер Chrome и создаст шаблон Excel
 bash scripts/setup.sh
 ```
 
