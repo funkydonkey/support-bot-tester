@@ -1,0 +1,26 @@
+# Browser profile with your corporate SSO session — NEVER commit this
+.pw-profile/
+.auth/
+storage-state.json
+
+# Test run artifacts
+reports/results.json
+reports/report-*.xlsx
+reports/pw-artifacts/
+reports/*.zip
+reports/*.png
+
+# Node / Python
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Local secrets
+.env

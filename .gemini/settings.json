@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--browser=chrome",
+        "--user-data-dir=./.pw-profile",
+        "--viewport-size=1280,900",
+        "--output-dir=./reports/pw-artifacts"
+      ],
+      "trust": true,
+      "timeout": 120000
+    }
+  },
+  "_comment": "Headed Chrome with a PERSISTENT profile (.pw-profile) so your corporate SSO login survives between runs. trust:true lets the test agent drive the browser without a confirmation prompt on every action. Add \"--headless\" to the args only after login is established and you want unattended runs. Swap --browser=chrome for msedge/firefox/webkit if needed."
+}

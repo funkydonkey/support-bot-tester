@@ -1,0 +1,13 @@
+{
+  "name": "support-bot-tester",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gemini CLI + Playwright MCP harness for testing the Jira Service Desk support bot",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "browsers": "npx playwright install chrome"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.41"
+  }
+}

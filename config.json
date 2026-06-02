@@ -1,0 +1,6 @@
+{
+  "target_url": "https://deliveryhero.atlassian.net/servicedesk/customer/portal/46/conversation?isTestConversation=true",
+  "scenarios_file": "scenarios/test-scenarios.xlsx",
+  "results_file": "reports/results.json",
+  "comment": "Edit target_url if the test conversation link changes. scenarios_file points at the Excel sheet with your test cases."
+}
